@@ -27,10 +27,13 @@ export function HeroSlider() {
       <AnimatePresence>
         <motion.div
           key={currentIndex}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1.05 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          transition={{ 
+            opacity: { duration: 1.5, ease: "easeInOut" },
+            scale: { duration: 8, ease: "linear" } 
+          }}
           className="absolute inset-0"
         >
           <Image
@@ -44,8 +47,8 @@ export function HeroSlider() {
           />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-r from-ink-900/90 via-ink-900/60 to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute inset-0 bg-ink-900/40 z-10 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-ink-900/60 via-ink-900/20 to-transparent z-10 pointer-events-none mix-blend-multiply"></div>
+      <div className="absolute inset-0 bg-ink-900/10 z-10 pointer-events-none"></div>
     </div>
   );
 }
