@@ -5,6 +5,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { MapPin, Phone, Clock, Star } from "lucide-react";
 import { StoryVideo } from "@/components/StoryVideo";
 import { HeroSlider } from "@/components/HeroSlider";
+import { ReservationForm } from "@/components/ReservationForm";
 
 export default function Home() {
   const waReserveMsg = encodeURIComponent("Hi TRP - The Rooftop Project! I'd like to reserve a table.\nName:\nDate & Time:\nNumber of Guests:");
@@ -113,11 +114,11 @@ export default function Home() {
         
         <RevealGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {[
-            { name: "Tandoori Barrah Mutton Chops", desc: "Char-grilled and smoky, the dish reviewers name first.", img: "/images/trp_dish_1.png" },
-            { name: "Karari Roti", desc: "Crisp, built for scooping up everything else on the table.", img: "/images/trp_dish_2.png" },
-            { name: "Egg Dum Biryani", desc: "Layered, slow-cooked, and consistently one of the most-ordered mains.", img: "/images/trp_dish_3.png" },
-            { name: "Loaded Cheesy Nachos with Chicken", desc: "The shareable start to a night that's about to get louder.", img: "/images/trp_dish_4.png" },
-            { name: "Dal Makhani", desc: "Slow-simmered comfort, the anchor on a menu full of fusion twists.", img: "/images/trp_dish_5.png" }
+            { name: "Tandoori Barrah Mutton Chops", desc: "Char-grilled and smoky, the dish reviewers name first.", img: "/images/tandoori_mutton.png" },
+            { name: "Karari Roti", desc: "Crisp, built for scooping up everything else on the table.", img: "/images/karari_roti.png" },
+            { name: "Egg Dum Biryani", desc: "Layered, slow-cooked, and consistently one of the most-ordered mains.", img: "/images/egg_biryani.png" },
+            { name: "Loaded Cheesy Nachos with Chicken", desc: "The shareable start to a night that's about to get louder.", img: "/images/cheesy_nachos.png" },
+            { name: "Dal Makhani", desc: "Slow-simmered comfort, the anchor on a menu full of fusion twists.", img: "/images/dal_makhani.png" }
           ].map((dish, i) => (
             <RevealItem key={i} className="bg-cream-100 rounded-xl overflow-hidden border border-cream-border hover:shadow-xl transition-all duration-300 group flex flex-col">
               <div className="aspect-[4/3] bg-cream-border/30 relative overflow-hidden">
@@ -335,7 +336,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. Testimonials */}
+      {/* 8. Reservation */}
+      <section id="reservation" className="py-24 md:py-32 px-6 bg-ink-900 text-cream-50 relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-terracotta/10 rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tan/5 rounded-full blur-[100px] pointer-events-none -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <Reveal className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block text-xs font-bold tracking-[0.2em] text-terracotta mb-4 uppercase flex items-center justify-center gap-4">
+              <span className="w-8 h-px bg-terracotta/50"></span> Book a Table <span className="w-8 h-px bg-terracotta/50"></span>
+            </span>
+            <h2 className="text-[clamp(2rem,3.5vw,2.75rem)] leading-[1.1] mb-6">
+              Reserve your <span className="italic text-tan">experience</span>
+            </h2>
+            <p className="text-cream-50/70 leading-relaxed font-sans text-lg">
+              Secure your spot on the rooftop. We recommend booking at least 24 hours in advance for weekends and special occasions.
+            </p>
+          </Reveal>
+          
+          <Reveal delay={0.2}>
+            <ReservationForm />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 9. Testimonials */}
       <section className="py-24 md:py-32 px-6 bg-cream-100 border-t border-cream-border/50">
         <div className="max-w-7xl mx-auto">
           <Reveal className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
