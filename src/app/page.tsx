@@ -4,6 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { MapPin, Phone, Clock, Star } from "lucide-react";
 import { StoryVideo } from "@/components/StoryVideo";
+import { HeroSlider } from "@/components/HeroSlider";
 
 export default function Home() {
   const waReserveMsg = encodeURIComponent("Hi TRP - The Rooftop Project! I'd like to reserve a table.\nName:\nDate & Time:\nNumber of Guests:");
@@ -38,20 +39,7 @@ export default function Home() {
 
       {/* 1. Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-start pt-20">
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src="/images/hero.png" 
-            alt="TRP - The Rooftop Project"
-            fill
-            className="object-cover"
-            priority
-            quality={100}
-            sizes="100vw"
-          />
-          {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-ink-900/90 via-ink-900/60 to-transparent"></div>
-          <div className="absolute inset-0 bg-ink-900/40"></div>
-        </div>
+        <HeroSlider />
 
         <div className="relative z-10 px-6 max-w-7xl mx-auto w-full mt-10 md:mt-0">
           <Reveal className="max-w-3xl">
@@ -135,7 +123,7 @@ export default function Home() {
               <div className="aspect-[4/3] bg-cream-border/30 relative overflow-hidden">
                 <Image 
                   src={dish.img}
-                  alt={dish.name + " [NEEDED FROM CLIENT]"}
+                  alt={dish.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -165,7 +153,7 @@ export default function Home() {
           <Reveal className="relative w-full aspect-[4/5] md:aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
             <Image 
               src="/images/mocktail.png" 
-              alt="Live on the Rooftop [NEEDED FROM CLIENT]"
+              alt="Live on the Rooftop"
               fill
               className="object-cover hover:scale-105 transition-transform duration-1000"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -266,12 +254,15 @@ export default function Home() {
               "/images/gallery-3.png", 
               "/images/gallery-4.png",
               "/images/gallery-5.png",
-              "/images/gallery-6.png"
+              "/images/gallery-6.png",
+              "/images/gallery-7.png",
+              "/images/gallery-8.png",
+              "/images/gallery-9.png"
             ].map((img, i) => (
               <RevealItem key={i} className="relative aspect-square rounded-xl overflow-hidden bg-cream-border/30 shadow-md">
                 <Image 
                   src={img}
-                  alt={`TRP Ambiance ${i + 1} [NEEDED FROM CLIENT]`}
+                  alt={`TRP Ambiance ${i + 1}`}
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-1000"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -335,7 +326,7 @@ export default function Home() {
           <Reveal delay={0.2} className="relative aspect-square md:aspect-[4/5] w-full rounded-2xl overflow-hidden bg-cream-100 border border-cream-border shadow-xl order-1 md:order-2">
             <Image 
               src="/images/event.png"
-              alt="Celebrations at TRP [NEEDED FROM CLIENT]"
+              alt="Celebrations at TRP"
               fill
               className="object-cover hover:scale-105 transition-transform duration-1000"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -524,7 +515,7 @@ export default function Home() {
           <Reveal delay={0.2} className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 items-start text-left pt-16 border-t border-cream-50/10">
             <div>
               <div className="relative w-16 h-16 mb-6 rounded-full overflow-hidden">
-                <Image src="/images/logo.png" alt="TRP Logo [NEEDED FROM CLIENT]" fill className="object-cover scale-[1.15]" />
+                <Image src="/images/logo.png" alt="TRP Logo" fill className="object-cover scale-[1.15]" />
               </div>
               <p className="text-sm text-cream-100/60 max-w-xs font-sans leading-relaxed">
                 Rooftop Bar & Kitchen<br />

@@ -58,7 +58,7 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link href="/" className="relative block w-14 h-14 rounded-full overflow-hidden shrink-0">
-            <Image src="/images/logo.png" alt="TRP Logo [NEEDED FROM CLIENT]" fill className="object-cover scale-[1.15]" />
+            <Image src="/images/logo.png" alt="TRP Logo" fill className="object-cover scale-[1.15]" />
           </Link>
 
           {/* Desktop Nav */}
