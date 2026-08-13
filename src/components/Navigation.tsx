@@ -126,17 +126,17 @@ export function Navigation() {
 
             <div className="mt-auto flex flex-col gap-4">
               <Link
-                href={`https://wa.me/910000000000?text=${waMessage}`}
+                href={`https://wa.me/919607384000?text=${waMessage}`}
                 target="_blank"
                 className="bg-terracotta text-cream-50 py-4 px-6 rounded-lg text-center font-medium uppercase tracking-wide text-sm"
               >
                 Reserve a Table
               </Link>
               <div className="flex justify-center gap-6 mt-4 text-ink-600">
-                <a href="tel:+910000000000" className="p-2 hover:text-terracotta">
+                <a href="tel:+919607384000" className="p-2 hover:text-terracotta">
                   <Phone size={24} />
                 </a>
-                <a href="https://wa.me/910000000000" target="_blank" className="p-2 hover:text-terracotta">
+                <a href="https://wa.me/919607384000" target="_blank" className="p-2 hover:text-terracotta">
                   <MessageCircle size={24} />
                 </a>
               </div>
@@ -148,14 +148,14 @@ export function Navigation() {
       {/* Persistent Mobile Bottom Right Actions */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 md:hidden">
         <a
-          href="tel:+910000000000"
+          href="tel:+919607384000"
           className="w-12 h-12 bg-cream-50 text-terracotta rounded-full flex items-center justify-center shadow-md border border-cream-border"
           aria-label="Call Now"
         >
           <Phone size={20} />
         </a>
         <a
-          href={`https://wa.me/910000000000?text=${waMessage}`}
+          href={`https://wa.me/919607384000?text=${waMessage}`}
           target="_blank"
           className="w-14 h-14 bg-terracotta text-cream-50 rounded-full flex items-center justify-center shadow-lg"
           aria-label="WhatsApp Us"

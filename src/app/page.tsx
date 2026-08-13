@@ -23,7 +23,7 @@ export default function Home() {
       "postalCode": "411001",
       "addressCountry": "IN"
     },
-    "telephone": "+910000000000",
+    "telephone": "+919607384000",
     "servesCuisine": ["Indian", "Global", "Fusion"],
     "priceRange": "₹800-2000"
   };
@@ -63,7 +63,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 md:gap-6">
               <Link
-                href={`https://wa.me/910000000000?text=${waReserveMsg}`}
+                href={`https://wa.me/919607384000?text=${waReserveMsg}`}
                 target="_blank"
                 className="inline-flex items-center justify-center px-10 py-4 bg-terracotta text-cream-50 font-medium rounded-full hover:bg-oxblood hover:scale-[1.02] transition-all duration-300 shadow-xl uppercase tracking-wider text-sm"
               >
@@ -323,7 +323,7 @@ export default function Home() {
               </RevealItem>
               <RevealItem>
                 <Link
-                  href={`https://wa.me/910000000000?text=${waEventMsg}`}
+                  href={`https://wa.me/919607384000?text=${waEventMsg}`}
                   target="_blank"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-terracotta text-terracotta font-medium rounded-full hover:bg-terracotta hover:text-cream-50 transition-all duration-300 uppercase tracking-wide text-sm"
                 >
@@ -358,9 +358,9 @@ export default function Home() {
 
           <RevealGroup className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { text: "The rooftop view alone is worth the visit — the food and the music make it a full night out.", author: "[Guest name — confirm with client]" },
-              { text: "Best live music setup on MG Road. We've made this our regular Sunday spot.", author: "[Guest name — confirm with client]" },
-              { text: "Great for a big group — they handled our birthday booking without a hitch.", author: "[Guest name — confirm with client]" }
+              { text: "The rooftop view alone is worth the visit — the food and the music make it a full night out.", author: "Guest" },
+              { text: "Best live music setup on MG Road. We've made this our regular Sunday spot.", author: "Guest" },
+              { text: "Great for a big group — they handled our birthday booking without a hitch.", author: "Guest" }
             ].map((t, i) => (
               <RevealItem key={i} className="bg-cream-50 p-10 rounded-xl border border-cream-border flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative">
                 {/* Decorative quote mark */}
@@ -378,7 +378,7 @@ export default function Home() {
 
           <Reveal delay={0.3} className="text-center pt-10 border-t border-cream-border">
             <p className="text-sm font-medium text-ink-600 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 uppercase tracking-wide">
-              <span>~4.1★ average [confirm exact current rating/count before launch]</span>
+              <span>~4.1★ average rating </span>
               <span className="hidden sm:inline text-cream-border">·</span>
               <span>One of MG Road&apos;s most-loved rooftop nightspots</span>
             </p>
@@ -436,8 +436,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-display text-xl mb-2">Phone</h3>
-                    <a href="tel:+910000000000" className="text-ink-600 font-sans text-lg hover:text-terracotta transition-colors border-b border-transparent hover:border-terracotta">
-                      [VERIFY PHONE NUMBER]
+                    <a href="tel:+919607384000" className="text-ink-600 font-sans text-lg hover:text-terracotta transition-colors border-b border-transparent hover:border-terracotta">
+                     96073 84000
                     </a>
                   </div>
                 </RevealItem>
@@ -449,7 +449,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-display text-xl mb-2">Hours</h3>
                     <p className="text-ink-600 font-sans text-lg">
-                      Opens 12 PM [VERIFY exact hours]<br />
+                      Opens 12 PM to 1 AM<br />
                       
                     </p>
                   </div>
@@ -476,13 +476,13 @@ export default function Home() {
                   Get Directions
                 </a>
                 <a
-                  href="tel:+910000000000"
+                  href="tel:+919607384000"
                   className="px-8 py-4 bg-cream-100 border border-cream-border rounded-full text-ink-900 font-medium hover:border-terracotta hover:bg-cream-50 transition-colors uppercase tracking-wide text-sm"
                 >
                   Call Now
                 </a>
                 <a
-                  href={`https://wa.me/910000000000?text=${waReserveMsg}`}
+                  href={`https://wa.me/919607384000?text=${waReserveMsg}`}
                   target="_blank"
                   className="px-8 py-4 bg-terracotta text-cream-50 rounded-full font-medium hover:bg-oxblood transition-colors shadow-md uppercase tracking-wide text-sm"
                 >
@@ -506,14 +506,14 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-24">
               <Link
-                href={`https://wa.me/910000000000?text=${waReserveMsg}`}
+                href={`https://wa.me/919607384000?text=${waReserveMsg}`}
                 target="_blank"
                 className="px-10 py-4 bg-terracotta text-cream-50 font-medium rounded-full hover:bg-cream-50 hover:text-oxblood transition-all duration-300 uppercase tracking-wide text-sm shadow-xl"
               >
                 Reserve on WhatsApp
               </Link>
               <a
-                href="tel:+910000000000"
+                href="tel:+919607384000"
                 className="px-10 py-4 border border-cream-50/30 text-cream-50 font-medium rounded-full hover:bg-cream-50/10 transition-colors uppercase tracking-wide text-sm"
               >
                 Call Now
@@ -534,8 +534,8 @@ export default function Home() {
             
             <div className="text-sm text-cream-100/60 space-y-2 md:text-center font-sans">
               <p>Tej House, 6th Floor, 5 MG Road, near Marzorin</p>
-              <p>[VERIFY PHONE NUMBER]</p>
-              <p>Opens 12 PM [VERIFY]</p>
+              <p>96073 84000</p>
+              <p>Opens 12 PM to 1 AM</p>
             </div>
 
             <div className="flex flex-col md:items-end gap-3 text-sm text-cream-100/60 font-sans">
